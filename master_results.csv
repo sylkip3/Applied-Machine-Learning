@@ -1,0 +1,7 @@
+Model,Type,Accuracy,F1 (Overall),F1 (Attack),ROC-AUC,PR-AUC,Train (s),Infer (s),Mem (MB),Train O()
+Random Forest,Ensemble ML,0.9924,0.9925,0.9584,0.9996,0.9961,109.011,0.245,47.6,O(n·d·T·log n)
+XGBoost,Ensemble ML,0.9922,0.9923,0.9572,0.9996,0.9962,12.34,0.3785,1.61,O(n·d·T)
+Isolation Forest,Anomaly ML,0.8986,0.8983,0.4231,0.9165,0.37,6.65,1.0627,9.75,O(n·T·log ψ)
+SVM (RBF),Kernel ML,0.9856,0.986,0.9239,0.9975,0.9673,33.71,11.5715,27.91,O(n²·d)~O(n³)
+Autoencoder,Deep Learning,0.9379,0.9425,0.7068,0.9759,0.7371,51.753,3.2754,45.82,O(E·n·d²)
+1D CNN,Deep Learning,0.986,0.9864,0.9265,0.9989,0.989,57.305,3.1654,47.41,O(E·n·k·d·f)

@@ -1,0 +1,129 @@
+{
+  "Random Forest": {
+    "Accuracy": 0.992425,
+    "Precision": 0.992794,
+    "Recall": 0.992425,
+    "F1": 0.992526,
+    "F1_Attack": 0.958431,
+    "ROC_AUC": 0.999613,
+    "PR_AUC": 0.99607,
+    "uncertainty_by_cat": {
+      "Analysis": 0.018108,
+      "Backdoors": 0.007572,
+      "DoS": 0.018668,
+      "Exploits": 0.013996,
+      "Fuzzers": 0.099714,
+      "Generic": 0.00226,
+      "Normal": 0.003555,
+      "Reconnaissance": 0.013121,
+      "Shellcode": 0.030495,
+      "Worms": 0.003317
+    },
+    "tree_variance_lf": 0.0139,
+    "cv_f1_mean": 0.9958,
+    "cv_f1_std": 0.0003,
+    "cv_auc_mean": 0.9999
+  },
+  "XGBoost": {
+    "Accuracy": 0.992175,
+    "Precision": 0.992606,
+    "Recall": 0.992175,
+    "F1": 0.99229,
+    "F1_Attack": 0.957188,
+    "ROC_AUC": 0.999628,
+    "PR_AUC": 0.99622,
+    "spw_ablation_gain": -0.0086,
+    "fi_rank_shift_top10": {
+      "dttl": 35,
+      "Dpkts": 20,
+      "ct_dst_ltm": 15,
+      "tcprtt": 13,
+      "Dload": 11,
+      "dloss": -10,
+      "synack": -10,
+      "dmeansz": -8,
+      "Dintpkt": -6,
+      "ct_src_ltm": -6
+    },
+    "cv_f1_mean": 0.9873,
+    "cv_f1_std": 0.0008,
+    "cv_auc_mean": 0.9995
+  },
+  "Isolation Forest": {
+    "Accuracy": 0.898625,
+    "Precision": 0.898068,
+    "Recall": 0.898625,
+    "F1": 0.898345,
+    "F1_Attack": 0.423104,
+    "ROC_AUC": 0.9165,
+    "PR_AUC": 0.37002,
+    "anomaly_score_by_cat": {
+      "Analysis": -0.001702,
+      "Backdoors": -0.003546,
+      "DoS": 0.007048,
+      "Exploits": 0.017157,
+      "Fuzzers": 0.012285,
+      "Generic": -0.026706,
+      "Normal": -0.08526,
+      "Reconnaissance": -0.015748,
+      "Shellcode": -0.014233,
+      "Worms": 0.071108
+    },
+    "contamination_used": 0.088388,
+    "raw_attack_ratio": 0.088388
+  },
+  "SVM (RBF)": {
+    "Accuracy": 0.985575,
+    "Precision": 0.987299,
+    "Recall": 0.985575,
+    "F1": 0.986013,
+    "F1_Attack": 0.923949,
+    "ROC_AUC": 0.997485,
+    "PR_AUC": 0.967319,
+    "n_support_vectors": 1358,
+    "sv_ratio": 0.034
+  },
+  "Autoencoder": {
+    "Accuracy": 0.93795,
+    "Precision": 0.951109,
+    "Recall": 0.93795,
+    "F1": 0.942454,
+    "F1_Attack": 0.706827,
+    "ROC_AUC": 0.975875,
+    "PR_AUC": 0.737113,
+    "recon_err_by_cat": {
+      "Analysis": 0.644428,
+      "Backdoors": 0.550348,
+      "DoS": 0.670128,
+      "Exploits": 0.398123,
+      "Fuzzers": 0.287481,
+      "Generic": 0.181335,
+      "Normal": 0.027552,
+      "Reconnaissance": 0.119905,
+      "Shellcode": 0.074507,
+      "Worms": 0.981998
+    },
+    "threshold": 0.060985
+  },
+  "1D CNN": {
+    "Accuracy": 0.985975,
+    "Precision": 0.987895,
+    "Recall": 0.985975,
+    "F1": 0.986436,
+    "F1_Attack": 0.926503,
+    "ROC_AUC": 0.998946,
+    "PR_AUC": 0.98905,
+    "saliency_magnitude_by_cat": {
+      "Analysis": 0.005095,
+      "Backdoors": 0.00039,
+      "DoS": 0.004824,
+      "Exploits": 0.002698,
+      "Fuzzers": 0.01193,
+      "Generic": 0.000142,
+      "Normal": 0.000347,
+      "Reconnaissance": 0.002522,
+      "Shellcode": 0.002761,
+      "Worms": 0.001207
+    }
+  }
+}
